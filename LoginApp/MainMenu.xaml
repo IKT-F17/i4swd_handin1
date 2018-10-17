@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoginApp"
         mc:Ignorable="d"
-        Title="Main Menu - Tower Defence" Height="460" Width="360" Background="Azure" ResizeMode="NoResize">
+        Title="Main Menu - Tower Defence" Height="460" Width="360" Background="White" ResizeMode="NoResize">
     <Border Background="#FF2D3237" CornerRadius="10" Margin="10">
         <StackPanel Margin="20">
             <Label Content="Welcome to" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="30"/>
