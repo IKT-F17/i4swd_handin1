@@ -11,7 +11,7 @@ namespace LoginApp
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnLoginAsUser_Click(object sender, RoutedEventArgs e)
         {
             var userInput = new Dictionary<string, string>
             {
@@ -29,13 +29,34 @@ namespace LoginApp
 
                 case 1:
                     // Switch to Main Menu.
-                    MessageBox.Show("Main Menu, here we come!");
+                    Hide();
+                    new MainMenu().Show();
                     break;
 
                 default:
                     // Do something default.
                     break;
             }
+        }
+
+        private void btnLoginAsGuest_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Logging in as Guest...");
+        }
+
+        private void btnRegisterUser_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Showing register user screen!");
+        }
+
+        private void txtUsername_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txtUsername.SelectAll();
+        }
+
+        private void txtPassword_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txtPassword.Password = "";
         }
     }
 }

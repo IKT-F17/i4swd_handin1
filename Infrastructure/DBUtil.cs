@@ -24,25 +24,18 @@ namespace Infrastructure
         {
             tempDb.Add("Admin", "1234");
 
+            // OBS. At this point it became clear to us that using a Dictionary to store user input wasn't very practical.
             var inputKey = input.Keys.ToArray();
             var inputValue = input.Values.ToArray();
             var key = inputKey[0];
             var value = inputValue[0];
 
-            // Find out if Dictionary contains input?
-
-            //tempDb.TryGetValue(input.Keys.ToString(), out var value);
-
+            // Find out if Dictionary contains key and output it's value for the found key to a variable?
             tempDb.TryGetValue(key, out var dbValue);
 
-            if (value == dbValue)
-            {
-                // Username and password was in DB and matched.
-                return true;
-            }
+            return value == dbValue;
 
             // Username was not in DB.
-            return false;
         }
 
 
