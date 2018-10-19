@@ -1,4 +1,6 @@
-﻿<Window x:Class="LoginApp.LoginScreen"
+﻿<!-- I4SWD Hand In 1 by Group 7 (Frederik, John, Mark and Tonni) -->
+    
+<Window x:Class="LoginApp.LoginScreen"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"

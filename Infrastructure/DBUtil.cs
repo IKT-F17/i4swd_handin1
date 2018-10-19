@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿/* I4SWD Hand In 1 by Group 7 (Frederik, John, Mark and Tonni) */
+
+using System.Collections.Generic;
 using System.Linq;
 using DomainModel;
 
